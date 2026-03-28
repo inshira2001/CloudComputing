@@ -59,7 +59,7 @@ env:
   ENVIRONMENT_NAME: ${{ github.event.inputs.environment_name || vars.ENVIRONMENT_NAME || 'prod' }}
   VPC_STACK_NAME: ${{ github.event.inputs.vpc_stack_name || vars.VPC_STACK_NAME || 'prod-vpc-stack' }}
   ALB_STACK_NAME: ${{ github.event.inputs.alb_stack_name || vars.ALB_STACK_NAME || 'prod-alb-stack' }}
-  EC2_KEY_NAME: ${{ github.event.inputs.key_name || vars.EC2_KEY_NAME || '' }}
+  EC2_KEY_NAME: ${{ github.event.inputs.key_name || vars.EC2_KEY_NAME || 'cf-kp' }}
   BASTION_ALLOWED_SSH_CIDR: ${{ github.event.inputs.bastion_allowed_ssh_cidr || vars.BASTION_ALLOWED_SSH_CIDR || '0.0.0.0/0' }}
   DESIRED_CAPACITY: ${{ github.event.inputs.desired_capacity || vars.DESIRED_CAPACITY || '3' }}
   APP_INSTANCE_TYPE: ${{ github.event.inputs.app_instance_type || vars.APP_INSTANCE_TYPE || 't2.micro' }}
