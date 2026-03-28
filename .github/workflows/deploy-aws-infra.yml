@@ -38,7 +38,7 @@ on:
         required: false
         default: "3"
       app_instance_type:
-        description: EC2 instance type for the app servers
+        description: EC2 instance type for the application servers
         required: false
         default: t3.micro
       bastion_instance_type:
